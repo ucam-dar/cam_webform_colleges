@@ -1,0 +1,53 @@
+<?php
+/**
+ * Implements hook_webform_select_options_info().
+ */
+function cam_webform_colleges_webform_select_options_info() {
+  $items = array();
+  $items['colleges'] = array(
+    'title' => t('Colleges'),
+    'options callback' => 'webform_options_colleges',
+  );
+  return $items;
+}
+/**
+ * Webform options info callback.
+ */
+function webform_options_colleges() {
+  $colleges = array(
+		'christs' => t('Christ\'s'),
+		'churchill' => t('Churchill'),
+		'clare' => t('Clare'),
+		'clare_hall' => t('Clare Hall'),
+		'corpus_christi' => t('Corpus Christi'),
+		'darwin' => t('Darwin'),
+		'downing' => t('Downing'),
+		'emmanuel' => t('Emmanuel'),
+		'fitzwilliam' => t('Fitzwilliam'),
+		'girton' => t('Girton'),
+		'gonville_caius' => t('Gonville &amp; Caius'),
+		'homerton' => t('Homerton'),
+		'hughes_hall' => t('Hughes Hall'),
+		'jesus' => t('Jesus'),
+		'kings' => t('King\'s'),
+		'lucy_cavendish' => t('Lucy Cavendish'),
+		'magdalene' => t('Magdalene'),
+		'murray_edwards' => t('Murray Edwards'),
+		'new_hall' => t('New Hall'),
+		'newnham' => t('Newnham'),
+		'pembroke' => t('Pembroke'),
+		'peterhouse' => t('Peterhouse'),
+		'queens' => t('Queens\''),
+		'robinson' => t('Robinson'),
+		'selwyn' => t('Selwyn'),
+		'sidney_sussex' => t('Sidney Sussex'),
+		'st_catharines' => t('St Catharine\'s'),
+		'st_edmunds' => t('St Edmund\'s'),
+		'st_johns' => t('St John\'s'),
+		'trinity' => t('Trinity'),
+		'trinity_hall' => t('Trinity Hall'),
+		'wolfson' => t('Wolfson'),
+  );
+  return $colleges;
+}
+?>
