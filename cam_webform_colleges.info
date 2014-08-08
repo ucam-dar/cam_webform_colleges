@@ -1,3 +1,5 @@
 name = Webform College select list
 description = Create a predefined list of Colleges for webforms
 core = 7.x
+version = 7.x-1.0
+package = University of Cambridge
